@@ -1,0 +1,94 @@
+{
+  "timestamp": "2026-08-26T20:36:51.945Z",
+  "seekLatency": {
+    "totalSeeksRequested": 1127,
+    "totalSeeksCompleted": 1124,
+    "inFlightRemaining": 3,
+    "stalls": 4,
+    "completedSampleCount": 1124,
+    "minMs": "31.20",
+    "maxMs": "261.70",
+    "avgMs": "102.51",
+    "p50Ms": "95.90",
+    "p95Ms": "179.70",
+    "p99Ms": "204.40"
+  },
+  "reducedMotion": {
+    "mp4FetchSuppressed": true,
+    "mp4RequestsIntercepted": [],
+    "clsScore": 0,
+    "zeroLayoutShiftPass": true,
+    "shiftEntries": [],
+    "videoStates": [
+      {
+        "src": "",
+        "currentSrc": "",
+        "preload": "none",
+        "hasBlob": false,
+        "paused": true
+      },
+      {
+        "src": "",
+        "currentSrc": "",
+        "preload": "none",
+        "hasBlob": false,
+        "paused": true
+      },
+      {
+        "src": "",
+        "currentSrc": "",
+        "preload": "none",
+        "hasBlob": false,
+        "paused": true
+      },
+      {
+        "src": "",
+        "currentSrc": "",
+        "preload": "none",
+        "hasBlob": false,
+        "paused": true
+      },
+      {
+        "src": "",
+        "currentSrc": "",
+        "preload": "none",
+        "hasBlob": false,
+        "paused": true
+      },
+      {
+        "src": "",
+        "currentSrc": "",
+        "preload": "none",
+        "hasBlob": false,
+        "paused": true
+      }
+    ]
+  },
+  "networkAndConsoleResilience": {
+    "consoleErrorsCount": 0,
+    "consoleErrors": [],
+    "networkErrorsCount": 0,
+    "networkErrors": [],
+    "pass": true
+  },
+  "mobileScrubbing": {
+    "totalSeeksRequested": 1142,
+    "totalSeeksCompleted": 1142,
+    "inFlightRemaining": 0,
+    "completedSampleCount": 1142,
+    "minMs": "3.80",
+    "maxMs": "53.90",
+    "avgMs": "24.34",
+    "p50Ms": "21.90",
+    "p95Ms": "42.50",
+    "p99Ms": "50.20"
+  },
+  "summary": {
+    "latencyPass": true,
+    "desktopP95LatencyMs": "179.70",
+    "mobileP95LatencyMs": "42.50",
+    "reducedMotionPass": true,
+    "resiliencePass": true,
+    "verdict": "APPROVE"
+  }
+}

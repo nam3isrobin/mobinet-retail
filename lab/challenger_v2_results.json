@@ -1,0 +1,1002 @@
+{
+  "timestamp": "2026-08-26T20:33:07.984Z",
+  "clsAudit": {
+    "allPassed": true,
+    "results": [
+      {
+        "viewport": "Desktop 1440x900",
+        "initialCLS": 0,
+        "postScrollCLS": 0,
+        "shiftsCount": 0,
+        "shifts": [],
+        "worldRect": {
+          "worldExists": true,
+          "worldRect": {
+            "top": 0,
+            "left": 0,
+            "width": 1440,
+            "height": 900
+          },
+          "worldPosition": "fixed",
+          "segCount": 6,
+          "segsFixedOrAbsolute": true
+        },
+        "passed": true
+      },
+      {
+        "viewport": "Desktop 1440x900 (Reduced Motion)",
+        "initialCLS": 0,
+        "postScrollCLS": 0,
+        "shiftsCount": 0,
+        "shifts": [],
+        "worldRect": {
+          "worldExists": true,
+          "worldRect": {
+            "top": 0,
+            "left": 0,
+            "width": 1440,
+            "height": 900
+          },
+          "worldPosition": "fixed",
+          "segCount": 6,
+          "segsFixedOrAbsolute": true
+        },
+        "passed": true
+      },
+      {
+        "viewport": "Desktop 1920x1080",
+        "initialCLS": 0,
+        "postScrollCLS": 0,
+        "shiftsCount": 0,
+        "shifts": [],
+        "worldRect": {
+          "worldExists": true,
+          "worldRect": {
+            "top": 0,
+            "left": 0,
+            "width": 1920,
+            "height": 1080
+          },
+          "worldPosition": "fixed",
+          "segCount": 6,
+          "segsFixedOrAbsolute": true
+        },
+        "passed": true
+      },
+      {
+        "viewport": "Tablet 768x1024",
+        "initialCLS": 0,
+        "postScrollCLS": 0,
+        "shiftsCount": 0,
+        "shifts": [],
+        "worldRect": {
+          "worldExists": true,
+          "worldRect": {
+            "top": 0,
+            "left": 0,
+            "width": 768,
+            "height": 1024
+          },
+          "worldPosition": "fixed",
+          "segCount": 6,
+          "segsFixedOrAbsolute": true
+        },
+        "passed": true
+      },
+      {
+        "viewport": "Mobile iPhone 12/13/14 (390x844)",
+        "initialCLS": 0,
+        "postScrollCLS": 0,
+        "shiftsCount": 0,
+        "shifts": [],
+        "worldRect": {
+          "worldExists": true,
+          "worldRect": {
+            "top": 0,
+            "left": 0,
+            "width": 390,
+            "height": 844
+          },
+          "worldPosition": "fixed",
+          "segCount": 6,
+          "segsFixedOrAbsolute": true
+        },
+        "passed": true
+      },
+      {
+        "viewport": "Mobile iPhone SE (375x667)",
+        "initialCLS": 0,
+        "postScrollCLS": 0,
+        "shiftsCount": 0,
+        "shifts": [],
+        "worldRect": {
+          "worldExists": true,
+          "worldRect": {
+            "top": 0,
+            "left": 0,
+            "width": 375,
+            "height": 667
+          },
+          "worldPosition": "fixed",
+          "segCount": 6,
+          "segsFixedOrAbsolute": true
+        },
+        "passed": true
+      }
+    ]
+  },
+  "all12ClipsDirectSeek": {
+    "allPassed": true,
+    "results": [
+      {
+        "name": "leg1.mp4 (Desktop Leg 1)",
+        "relPath": "assets/leg1.mp4",
+        "type": "desktop",
+        "metrics": {
+          "videoDuration": 5,
+          "videoWidth": 1920,
+          "videoHeight": 1080,
+          "readyState": 4,
+          "totalSeeks": 11,
+          "stalls": 0,
+          "errors": [],
+          "durations": [
+            {
+              "target": 0,
+              "durationMs": 0.30000001192092896
+            },
+            {
+              "target": 0.5,
+              "durationMs": 81.30000001192093
+            },
+            {
+              "target": 1.25,
+              "durationMs": 62.400000005960464
+            },
+            {
+              "target": 2.5,
+              "durationMs": 57.599999994039536
+            },
+            {
+              "target": 3.75,
+              "durationMs": 34.099999994039536
+            },
+            {
+              "target": 4.9,
+              "durationMs": 45
+            },
+            {
+              "target": 1,
+              "durationMs": 66.19999998807907
+            },
+            {
+              "target": 3,
+              "durationMs": 42.099999994039536
+            },
+            {
+              "target": 0.1,
+              "durationMs": 64.90000000596046
+            },
+            {
+              "target": 4.8,
+              "durationMs": 33.099999994039536
+            },
+            {
+              "target": 0,
+              "durationMs": 34.80000001192093
+            }
+          ],
+          "minMs": "0.30",
+          "avgMs": "47.44",
+          "p50Ms": "45.00",
+          "p95Ms": "81.30",
+          "maxMs": "81.30"
+        },
+        "passed": true
+      },
+      {
+        "name": "leg2.mp4 (Desktop Leg 2)",
+        "relPath": "assets/leg2.mp4",
+        "type": "desktop",
+        "metrics": {
+          "videoDuration": 5,
+          "videoWidth": 1920,
+          "videoHeight": 1080,
+          "readyState": 4,
+          "totalSeeks": 11,
+          "stalls": 0,
+          "errors": [],
+          "durations": [
+            {
+              "target": 0,
+              "durationMs": 0.4000000059604645
+            },
+            {
+              "target": 0.5,
+              "durationMs": 79.5
+            },
+            {
+              "target": 1.25,
+              "durationMs": 59.5
+            },
+            {
+              "target": 2.5,
+              "durationMs": 59.400000005960464
+            },
+            {
+              "target": 3.75,
+              "durationMs": 35.80000001192093
+            },
+            {
+              "target": 4.9,
+              "durationMs": 46.599999994039536
+            },
+            {
+              "target": 1,
+              "durationMs": 64.90000000596046
+            },
+            {
+              "target": 3,
+              "durationMs": 40.19999998807907
+            },
+            {
+              "target": 0.1,
+              "durationMs": 68.59999999403954
+            },
+            {
+              "target": 4.8,
+              "durationMs": 33
+            },
+            {
+              "target": 0,
+              "durationMs": 33.79999998211861
+            }
+          ],
+          "minMs": "0.40",
+          "avgMs": "47.43",
+          "p50Ms": "46.60",
+          "p95Ms": "79.50",
+          "maxMs": "79.50"
+        },
+        "passed": true
+      },
+      {
+        "name": "leg3.mp4 (Desktop Leg 3)",
+        "relPath": "assets/leg3.mp4",
+        "type": "desktop",
+        "metrics": {
+          "videoDuration": 5,
+          "videoWidth": 1920,
+          "videoHeight": 1080,
+          "readyState": 4,
+          "totalSeeks": 11,
+          "stalls": 0,
+          "errors": [],
+          "durations": [
+            {
+              "target": 0,
+              "durationMs": 0.19999998807907104
+            },
+            {
+              "target": 0.5,
+              "durationMs": 78.30000001192093
+            },
+            {
+              "target": 1.25,
+              "durationMs": 62.099999994039536
+            },
+            {
+              "target": 2.5,
+              "durationMs": 55.20000001788139
+            },
+            {
+              "target": 3.75,
+              "durationMs": 33.5
+            },
+            {
+              "target": 4.9,
+              "durationMs": 42.70000001788139
+            },
+            {
+              "target": 1,
+              "durationMs": 63.400000005960464
+            },
+            {
+              "target": 3,
+              "durationMs": 39.80000001192093
+            },
+            {
+              "target": 0.1,
+              "durationMs": 60.20000001788139
+            },
+            {
+              "target": 4.8,
+              "durationMs": 31.799999982118607
+            },
+            {
+              "target": 0,
+              "durationMs": 31.5
+            }
+          ],
+          "minMs": "0.20",
+          "avgMs": "45.34",
+          "p50Ms": "42.70",
+          "p95Ms": "78.30",
+          "maxMs": "78.30"
+        },
+        "passed": true
+      },
+      {
+        "name": "leg4.mp4 (Desktop Leg 4)",
+        "relPath": "assets/leg4.mp4",
+        "type": "desktop",
+        "metrics": {
+          "videoDuration": 5,
+          "videoWidth": 1920,
+          "videoHeight": 1080,
+          "readyState": 4,
+          "totalSeeks": 11,
+          "stalls": 0,
+          "errors": [],
+          "durations": [
+            {
+              "target": 0,
+              "durationMs": 0.30000001192092896
+            },
+            {
+              "target": 0.5,
+              "durationMs": 86.5
+            },
+            {
+              "target": 1.25,
+              "durationMs": 60.60000002384186
+            },
+            {
+              "target": 2.5,
+              "durationMs": 61.099999994039536
+            },
+            {
+              "target": 3.75,
+              "durationMs": 37.099999994039536
+            },
+            {
+              "target": 4.9,
+              "durationMs": 47.29999998211861
+            },
+            {
+              "target": 1,
+              "durationMs": 66.5
+            },
+            {
+              "target": 3,
+              "durationMs": 43.5
+            },
+            {
+              "target": 0.1,
+              "durationMs": 67.30000001192093
+            },
+            {
+              "target": 4.8,
+              "durationMs": 34.099999994039536
+            },
+            {
+              "target": 0,
+              "durationMs": 35.599999994039536
+            }
+          ],
+          "minMs": "0.30",
+          "avgMs": "49.08",
+          "p50Ms": "47.30",
+          "p95Ms": "86.50",
+          "maxMs": "86.50"
+        },
+        "passed": true
+      },
+      {
+        "name": "leg5.mp4 (Desktop Leg 5)",
+        "relPath": "assets/leg5.mp4",
+        "type": "desktop",
+        "metrics": {
+          "videoDuration": 5,
+          "videoWidth": 1920,
+          "videoHeight": 1080,
+          "readyState": 4,
+          "totalSeeks": 11,
+          "stalls": 0,
+          "errors": [],
+          "durations": [
+            {
+              "target": 0,
+              "durationMs": 0.5
+            },
+            {
+              "target": 0.5,
+              "durationMs": 80.5
+            },
+            {
+              "target": 1.25,
+              "durationMs": 62.20000001788139
+            },
+            {
+              "target": 2.5,
+              "durationMs": 59.400000005960464
+            },
+            {
+              "target": 3.75,
+              "durationMs": 36.30000001192093
+            },
+            {
+              "target": 4.9,
+              "durationMs": 46.900000005960464
+            },
+            {
+              "target": 1,
+              "durationMs": 65.89999997615814
+            },
+            {
+              "target": 3,
+              "durationMs": 41.900000005960464
+            },
+            {
+              "target": 0.1,
+              "durationMs": 67.19999998807907
+            },
+            {
+              "target": 4.8,
+              "durationMs": 34.29999998211861
+            },
+            {
+              "target": 0,
+              "durationMs": 32.599999994039536
+            }
+          ],
+          "minMs": "0.50",
+          "avgMs": "47.97",
+          "p50Ms": "46.90",
+          "p95Ms": "80.50",
+          "maxMs": "80.50"
+        },
+        "passed": true
+      },
+      {
+        "name": "leg6.mp4 (Desktop Leg 6)",
+        "relPath": "assets/leg6.mp4",
+        "type": "desktop",
+        "metrics": {
+          "videoDuration": 5,
+          "videoWidth": 1920,
+          "videoHeight": 1080,
+          "readyState": 4,
+          "totalSeeks": 11,
+          "stalls": 0,
+          "errors": [],
+          "durations": [
+            {
+              "target": 0,
+              "durationMs": 0.30000001192092896
+            },
+            {
+              "target": 0.5,
+              "durationMs": 71.80000001192093
+            },
+            {
+              "target": 1.25,
+              "durationMs": 53.400000005960464
+            },
+            {
+              "target": 2.5,
+              "durationMs": 51.69999998807907
+            },
+            {
+              "target": 3.75,
+              "durationMs": 33
+            },
+            {
+              "target": 4.9,
+              "durationMs": 42.900000005960464
+            },
+            {
+              "target": 1,
+              "durationMs": 60.599999994039536
+            },
+            {
+              "target": 3,
+              "durationMs": 38.30000001192093
+            },
+            {
+              "target": 0.1,
+              "durationMs": 58.20000001788139
+            },
+            {
+              "target": 4.8,
+              "durationMs": 33
+            },
+            {
+              "target": 0,
+              "durationMs": 31.899999976158142
+            }
+          ],
+          "minMs": "0.30",
+          "avgMs": "43.19",
+          "p50Ms": "42.90",
+          "p95Ms": "71.80",
+          "maxMs": "71.80"
+        },
+        "passed": true
+      },
+      {
+        "name": "leg1-m.mp4 (Mobile Leg 1)",
+        "relPath": "assets/leg1-m.mp4",
+        "type": "mobile",
+        "metrics": {
+          "videoDuration": 5,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "readyState": 4,
+          "totalSeeks": 11,
+          "stalls": 0,
+          "errors": [],
+          "durations": [
+            {
+              "target": 0,
+              "durationMs": 0.3999999761581421
+            },
+            {
+              "target": 0.5,
+              "durationMs": 23.69999998807907
+            },
+            {
+              "target": 1.25,
+              "durationMs": 19.100000023841858
+            },
+            {
+              "target": 2.5,
+              "durationMs": 23.799999982118607
+            },
+            {
+              "target": 3.75,
+              "durationMs": 15.900000005960464
+            },
+            {
+              "target": 4.9,
+              "durationMs": 14.900000005960464
+            },
+            {
+              "target": 1,
+              "durationMs": 17.5
+            },
+            {
+              "target": 3,
+              "durationMs": 18.899999976158142
+            },
+            {
+              "target": 0.1,
+              "durationMs": 23.19999998807907
+            },
+            {
+              "target": 4.8,
+              "durationMs": 15.100000023841858
+            },
+            {
+              "target": 0,
+              "durationMs": 14.800000011920929
+            }
+          ],
+          "minMs": "0.40",
+          "avgMs": "17.03",
+          "p50Ms": "17.50",
+          "p95Ms": "23.80",
+          "maxMs": "23.80"
+        },
+        "passed": true
+      },
+      {
+        "name": "leg2-m.mp4 (Mobile Leg 2)",
+        "relPath": "assets/leg2-m.mp4",
+        "type": "mobile",
+        "metrics": {
+          "videoDuration": 5,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "readyState": 4,
+          "totalSeeks": 11,
+          "stalls": 0,
+          "errors": [],
+          "durations": [
+            {
+              "target": 0,
+              "durationMs": 0.29999998211860657
+            },
+            {
+              "target": 0.5,
+              "durationMs": 24.100000023841858
+            },
+            {
+              "target": 1.25,
+              "durationMs": 17.900000005960464
+            },
+            {
+              "target": 2.5,
+              "durationMs": 22.899999976158142
+            },
+            {
+              "target": 3.75,
+              "durationMs": 16.599999994039536
+            },
+            {
+              "target": 4.9,
+              "durationMs": 14.699999988079071
+            },
+            {
+              "target": 1,
+              "durationMs": 18.5
+            },
+            {
+              "target": 3,
+              "durationMs": 17
+            },
+            {
+              "target": 0.1,
+              "durationMs": 22.799999982118607
+            },
+            {
+              "target": 4.8,
+              "durationMs": 16.099999994039536
+            },
+            {
+              "target": 0,
+              "durationMs": 14.5
+            }
+          ],
+          "minMs": "0.30",
+          "avgMs": "16.85",
+          "p50Ms": "17.00",
+          "p95Ms": "24.10",
+          "maxMs": "24.10"
+        },
+        "passed": true
+      },
+      {
+        "name": "leg3-m.mp4 (Mobile Leg 3)",
+        "relPath": "assets/leg3-m.mp4",
+        "type": "mobile",
+        "metrics": {
+          "videoDuration": 5,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "readyState": 4,
+          "totalSeeks": 11,
+          "stalls": 0,
+          "errors": [],
+          "durations": [
+            {
+              "target": 0,
+              "durationMs": 0.4000000059604645
+            },
+            {
+              "target": 0.5,
+              "durationMs": 21.900000005960464
+            },
+            {
+              "target": 1.25,
+              "durationMs": 16.80000001192093
+            },
+            {
+              "target": 2.5,
+              "durationMs": 21.599999994039536
+            },
+            {
+              "target": 3.75,
+              "durationMs": 15.5
+            },
+            {
+              "target": 4.9,
+              "durationMs": 13.899999976158142
+            },
+            {
+              "target": 1,
+              "durationMs": 17.5
+            },
+            {
+              "target": 3,
+              "durationMs": 16.900000005960464
+            },
+            {
+              "target": 0.1,
+              "durationMs": 21.399999976158142
+            },
+            {
+              "target": 4.8,
+              "durationMs": 14.300000011920929
+            },
+            {
+              "target": 0,
+              "durationMs": 13.199999988079071
+            }
+          ],
+          "minMs": "0.40",
+          "avgMs": "15.76",
+          "p50Ms": "16.80",
+          "p95Ms": "21.90",
+          "maxMs": "21.90"
+        },
+        "passed": true
+      },
+      {
+        "name": "leg4-m.mp4 (Mobile Leg 4)",
+        "relPath": "assets/leg4-m.mp4",
+        "type": "mobile",
+        "metrics": {
+          "videoDuration": 5,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "readyState": 4,
+          "totalSeeks": 11,
+          "stalls": 0,
+          "errors": [],
+          "durations": [
+            {
+              "target": 0,
+              "durationMs": 0.30000001192092896
+            },
+            {
+              "target": 0.5,
+              "durationMs": 23.099999994039536
+            },
+            {
+              "target": 1.25,
+              "durationMs": 18.400000005960464
+            },
+            {
+              "target": 2.5,
+              "durationMs": 23.19999998807907
+            },
+            {
+              "target": 3.75,
+              "durationMs": 16.30000001192093
+            },
+            {
+              "target": 4.9,
+              "durationMs": 14.400000005960464
+            },
+            {
+              "target": 1,
+              "durationMs": 17.599999994039536
+            },
+            {
+              "target": 3,
+              "durationMs": 17.19999998807907
+            },
+            {
+              "target": 0.1,
+              "durationMs": 21.5
+            },
+            {
+              "target": 4.8,
+              "durationMs": 15
+            },
+            {
+              "target": 0,
+              "durationMs": 13.800000011920929
+            }
+          ],
+          "minMs": "0.30",
+          "avgMs": "16.44",
+          "p50Ms": "17.20",
+          "p95Ms": "23.20",
+          "maxMs": "23.20"
+        },
+        "passed": true
+      },
+      {
+        "name": "leg5-m.mp4 (Mobile Leg 5)",
+        "relPath": "assets/leg5-m.mp4",
+        "type": "mobile",
+        "metrics": {
+          "videoDuration": 5,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "readyState": 4,
+          "totalSeeks": 11,
+          "stalls": 0,
+          "errors": [],
+          "durations": [
+            {
+              "target": 0,
+              "durationMs": 0.30000001192092896
+            },
+            {
+              "target": 0.5,
+              "durationMs": 23.700000017881393
+            },
+            {
+              "target": 1.25,
+              "durationMs": 18.200000017881393
+            },
+            {
+              "target": 2.5,
+              "durationMs": 24.099999994039536
+            },
+            {
+              "target": 3.75,
+              "durationMs": 16.099999994039536
+            },
+            {
+              "target": 4.9,
+              "durationMs": 15.5
+            },
+            {
+              "target": 1,
+              "durationMs": 17.299999982118607
+            },
+            {
+              "target": 3,
+              "durationMs": 18.099999994039536
+            },
+            {
+              "target": 0.1,
+              "durationMs": 21.80000001192093
+            },
+            {
+              "target": 4.8,
+              "durationMs": 16.599999994039536
+            },
+            {
+              "target": 0,
+              "durationMs": 14.600000023841858
+            }
+          ],
+          "minMs": "0.30",
+          "avgMs": "16.94",
+          "p50Ms": "17.30",
+          "p95Ms": "24.10",
+          "maxMs": "24.10"
+        },
+        "passed": true
+      },
+      {
+        "name": "leg6-m.mp4 (Mobile Leg 6)",
+        "relPath": "assets/leg6-m.mp4",
+        "type": "mobile",
+        "metrics": {
+          "videoDuration": 5,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "readyState": 4,
+          "totalSeeks": 11,
+          "stalls": 0,
+          "errors": [],
+          "durations": [
+            {
+              "target": 0,
+              "durationMs": 0.30000001192092896
+            },
+            {
+              "target": 0.5,
+              "durationMs": 20.80000001192093
+            },
+            {
+              "target": 1.25,
+              "durationMs": 15.400000005960464
+            },
+            {
+              "target": 2.5,
+              "durationMs": 19.80000001192093
+            },
+            {
+              "target": 3.75,
+              "durationMs": 14
+            },
+            {
+              "target": 4.9,
+              "durationMs": 12.400000005960464
+            },
+            {
+              "target": 1,
+              "durationMs": 16.400000005960464
+            },
+            {
+              "target": 3,
+              "durationMs": 15.300000011920929
+            },
+            {
+              "target": 0.1,
+              "durationMs": 19.599999994039536
+            },
+            {
+              "target": 4.8,
+              "durationMs": 13.799999982118607
+            },
+            {
+              "target": 0,
+              "durationMs": 11.599999994039536
+            }
+          ],
+          "minMs": "0.30",
+          "avgMs": "14.49",
+          "p50Ms": "15.30",
+          "p95Ms": "20.80",
+          "maxMs": "20.80"
+        },
+        "passed": true
+      }
+    ]
+  },
+  "liveInteractiveScrubbing": {
+    "metrics": {
+      "totalRequested": 1114,
+      "totalCompleted": 1112,
+      "stalls": 4,
+      "minMs": "29.70",
+      "avgMs": "101.55",
+      "p50Ms": "93.70",
+      "p95Ms": "179.90",
+      "p99Ms": "199.50",
+      "maxMs": "227.40"
+    },
+    "passed": true
+  },
+  "reducedMotionVerification": {
+    "mp4SuppressionPass": true,
+    "interceptedMp4s": [],
+    "postersLoadedPass": true,
+    "posters": [
+      {
+        "src": "http://localhost:4500/assets/p1.webp",
+        "naturalWidth": 1600,
+        "naturalHeight": 900,
+        "complete": true,
+        "computedOpacity": "1",
+        "computedDisplay": "block"
+      },
+      {
+        "src": "http://localhost:4500/assets/p2.webp",
+        "naturalWidth": 1600,
+        "naturalHeight": 900,
+        "complete": true,
+        "computedOpacity": "1",
+        "computedDisplay": "block"
+      },
+      {
+        "src": "http://localhost:4500/assets/p3.webp",
+        "naturalWidth": 1600,
+        "naturalHeight": 900,
+        "complete": true,
+        "computedOpacity": "1",
+        "computedDisplay": "block"
+      },
+      {
+        "src": "http://localhost:4500/assets/p4.webp",
+        "naturalWidth": 1600,
+        "naturalHeight": 900,
+        "complete": true,
+        "computedOpacity": "1",
+        "computedDisplay": "block"
+      },
+      {
+        "src": "http://localhost:4500/assets/p5.webp",
+        "naturalWidth": 1600,
+        "naturalHeight": 900,
+        "complete": true,
+        "computedOpacity": "1",
+        "computedDisplay": "block"
+      },
+      {
+        "src": "http://localhost:4500/assets/p6.webp",
+        "naturalWidth": 1600,
+        "naturalHeight": 900,
+        "complete": true,
+        "computedOpacity": "1",
+        "computedDisplay": "block"
+      }
+    ],
+    "cls": 0,
+    "passed": true
+  },
+  "networkAndConsoleResilience": {
+    "consoleErrors": [],
+    "networkErrors": [],
+    "passed": true
+  },
+  "verdict": "APPROVE"
+}

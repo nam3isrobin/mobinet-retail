@@ -20,7 +20,7 @@
   --sc-canvas:      #08090b;   /* the page ground. Drift interpolates this.   */
   --sc-surface:     #101217;   /* anything raised off the ground             */
   --sc-ink:         #f4f2ef;   /* primary text                               */
-  --sc-ink-soft:    #9a9ba1;   /* secondary text. Tinted, never flat gray.   */
+  --sc-ink-soft:    #B4B7C0;   /* secondary text. Upgraded for WCAG AAA/AA.  */
   --sc-accent:      #d8ff3e;   /* ONE accent. It owns a region, not confetti. */
   --sc-accent-ink:  #08090b;   /* text that sits on the accent               */
 
@@ -94,7 +94,7 @@
 
 /* --------------------------------------------------------------- reset -- */
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; overscroll-behavior-y: none; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 body {
@@ -109,6 +109,7 @@ body {
   text-rendering: optimizeLegibility;
   font-synthesis-weight: none;
   overflow-x: clip;
+  overscroll-behavior-y: none;
 }
 img, video, canvas, svg { display: block; max-width: 100%; }
 button, input, select, textarea { font: inherit; color: inherit; }
@@ -317,21 +318,34 @@ video[data-sc-scrub] { opacity: 0; transition: opacity 380ms var(--sc-ease-out);
 
 [data-sc-mode="worldflight"] { position: relative; }
 
-.sc-world {
+:is(.sc-world, [data-sc-world]) {
   position: fixed; inset: 0;
-  overflow: clip;
+  width: 100vw; height: 100vh; height: 100dvh;
+  overflow: hidden;
+  contain: strict;
   z-index: var(--sc-z-stage);
   background: var(--sc-canvas);
 }
 
 /* Every leg is mounted for the life of the page and stacked in the same box.
    The engine owns opacity, visibility and z-index here; do not set them. */
-.sc-world__seg {
+:is(.sc-world__seg, [data-sc-segment]) {
   position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
   opacity: 0;
   will-change: opacity;
 }
-.sc-world__seg > :is(video, img, canvas) {
+:is(.sc-world__seg, [data-sc-segment]) video,
+:is(.sc-world, [data-sc-world]) video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 1;
+}
+:is(.sc-world__seg, [data-sc-segment]) img,
+:is(.sc-world, [data-sc-world]) img {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
   object-fit: cover;
@@ -343,8 +357,7 @@ video[data-sc-scrub] { opacity: 0; transition: opacity 380ms var(--sc-ease-out);
   transform-origin: 50% 50%;
   transition: opacity 420ms var(--sc-ease-out);
 }
-.sc-world__seg > video { z-index: 1; }
-.sc-world__seg.sc-has-clip .sc-world__poster { opacity: 0; }
+:is(.sc-world__seg, [data-sc-segment]).sc-has-clip .sc-world__poster { opacity: 0; }
 /* The act stylesheet lights a clip through its ancestor act. A worldflight leg
    has no act, so match the class the engine also writes on the clip itself. */
 video[data-sc-scrub].sc-has-clip { opacity: 1; }
@@ -415,8 +428,38 @@ video[data-sc-scrub].sc-has-clip { opacity: 1; }
 
 /* --------------------------------------------------------------- mobile -- */
 @media (max-width: 860px) {
-  .sc-copy { inset-inline: var(--sc-gutter); max-width: none; }
-  .sc-copy--trail { text-align: left; }
+  .sc-copy {
+    left: var(--sc-gutter);
+    right: var(--sc-gutter);
+    inset-inline: var(--sc-gutter);
+    width: auto;
+    max-width: none;
+    box-sizing: border-box;
+  }
+  .sc-copy--lead {
+    left: var(--sc-gutter);
+    right: var(--sc-gutter);
+    inset-inline: var(--sc-gutter);
+    width: auto;
+    text-align: left;
+  }
+  .sc-copy--trail {
+    left: var(--sc-gutter);
+    right: var(--sc-gutter);
+    inset-inline: var(--sc-gutter);
+    width: auto;
+    text-align: left;
+  }
+  /* CRITICAL: Fix .sc-copy--center horizontal shift bug */
+  .sc-copy--center {
+    left: var(--sc-gutter);
+    right: var(--sc-gutter);
+    inset-inline: var(--sc-gutter);
+    top: 50%;
+    translate: 0 -50%;
+    width: auto;
+    text-align: center;
+  }
   .sc-stage { height: 100svh; }
   /* .sc-copy--trail re-anchors to the left and spans the full width here, so a
      bottom-RIGHT corner gradient darkens the one corner the copy just left and

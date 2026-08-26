@@ -294,6 +294,7 @@
     // One rate for the page, overridable per clip. Read from the mount root, the
     // document element, or the option bag, in that order.
     var LERP = lerpRate(root.nodeType === 1 ? root : null) ||
+               lerpRate(root.querySelector && root.querySelector('[data-sc-lerp]')) ||
                lerpRate(docEl) ||
                (opts.lerp > 0 ? clamp(opts.lerp, 0.02, 1) : 0) ||
                0.18;
@@ -948,9 +949,9 @@
     // event. The lerp here is also what turns a jittery wheel into a glide.
     function tick() {
       // Deadband. A phone decoder cannot service a seek every frame, so asking
-      // for one costs more than it shows; 20ms of clip is under a frame of
-      // footage anyway.
-      var eps = isMobile() ? 0.02 : 0.008;
+      // for one costs more than it shows; 10ms of clip is under a frame of
+      // footage anyway for dense-GOP mobile scrubbing.
+      var eps = isMobile() ? 0.01 : 0.008;
       for (var i = 0; i < playheads.length; i++) {
         var V = playheads[i];
         if (!V.ready) continue;
@@ -971,7 +972,8 @@
         V.stuckAt = 0;
         // An offscreen clip that has already arrived stops costing anything.
         if (!V.live && Math.abs(V.cur - V.target) < 0.002) continue;
-        V.cur += (V.target - V.cur) * (reduce ? 1 : V.lerp);
+        var curLerp = reduce ? 1 : (isMobile() ? Math.max(V.lerp, 0.22) : V.lerp);
+        V.cur += (V.target - V.cur) * curLerp;
         var dur = V.el.duration || 1;
         var t = clamp(V.cur, 0, 0.999) * dur;
         if (Math.abs(V.el.currentTime - t) > eps) { try { V.el.currentTime = t; } catch (e) {} }
@@ -1132,12 +1134,24 @@
       el.scrollIntoView({ block: 'center', inline: 'nearest', behavior: 'instant' });
     });
 
-    var lastW = innerWidth;
+    var lastW = innerWidth, lastH = innerHeight;
     addEventListener('resize', function () {
-      // Ignore URL-bar-only height changes on phones. Relaying out on those
-      // makes the page jump under the reader's thumb for no reason.
-      if (innerWidth === lastW && isMobile()) { vh = innerHeight; return; }
+      // Handle URL-bar-only height changes on phones.
+      // Update vh and spacer without causing disruptive layout jumps under the thumb.
+      if (innerWidth === lastW && isMobile()) {
+        var dh = Math.abs(innerHeight - lastH);
+        vh = innerHeight;
+        lastH = innerHeight;
+        if (dh < 140) {
+          worlds.forEach(function (W) {
+            if (W.spacer) W.spacer.style.height = Math.round((W.total + 1) * vh) + 'px';
+          });
+          read();
+          return;
+        }
+      }
       lastW = innerWidth;
+      lastH = innerHeight;
       layout();
     }, { passive: true });
 

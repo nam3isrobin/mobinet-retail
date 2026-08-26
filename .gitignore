@@ -1,6 +1,12 @@
 node_modules/
-lab/
 out/
 .env*
 *.pem
 .DS_Store
+.agents/
+lab/mobile/
+lab/mobile_verify/
+lab/reduced/
+lab/shots/
+lab/shots-v2/
+lab/*.png
