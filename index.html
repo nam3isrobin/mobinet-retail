@@ -1,0 +1,521 @@
+<!doctype html>
+<!--
+  Mobinet Retail — scrollcraft build
+  Grammar: Continuous World (worldflight mode)
+  Signature: Haptic Cursor Field
+  World: Nocturne-showroom
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mobinet Retail · Technology, refined.</title>
+<meta name="description" content="Premium tech retail. Phones, laptops, audio, wearables. Free shipping, 2-year warranty, expert support.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2308090D'/><text x='16' y='22' text-anchor='middle' fill='%233B9EFF' font-size='18' font-family='system-ui'>M</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="scrollcraft.css">
+<style>
+  :root {
+    --sc-canvas:     #08090D;
+    --sc-surface:    #12141A;
+    --sc-ink:        #E8E6E1;
+    --sc-ink-soft:   #7A7D85;
+    --sc-accent:     #3B9EFF;
+    --sc-accent-ink: #08090D;
+    --sc-font-display: "Outfit", system-ui, sans-serif;
+    --sc-font-text:    "Geist", system-ui, sans-serif;
+  }
+
+  /* ── Nav: waypoint list ── */
+  .site-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem var(--sc-gutter, 1.5rem);
+    pointer-events: none;
+  }
+  .site-bar > * { pointer-events: auto; }
+
+  .site-mark {
+    font-family: var(--sc-font-display);
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--sc-ink);
+    letter-spacing: var(--sc-track-tight, -0.01em);
+    text-decoration: none;
+  }
+  .site-mark span {
+    color: var(--sc-accent);
+  }
+
+  .site-waypoints {
+    display: flex;
+    gap: 1.6rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .site-waypoints li {
+    position: relative;
+  }
+  .site-waypoints a {
+    font-family: var(--sc-font-text);
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: var(--sc-ink-soft);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    transition: color 180ms var(--sc-ease-out, ease-out);
+  }
+  .site-waypoints a:hover,
+  .site-waypoints a:focus-visible {
+    color: var(--sc-accent);
+  }
+  .site-waypoints a:focus-visible {
+    outline: 2px solid var(--sc-accent);
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+
+  .site-cta {
+    font-family: var(--sc-font-text);
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--sc-accent-ink);
+    background: var(--sc-accent);
+    padding: 0.55rem 1.3rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: opacity 160ms var(--sc-ease-out, ease-out), transform 100ms var(--sc-ease-out, ease-out);
+  }
+  .site-cta:hover { opacity: 0.88; }
+  .site-cta:active { transform: translateY(1px); }
+  .site-cta:focus-visible {
+    outline: 2px solid var(--sc-accent);
+    outline-offset: 4px;
+    border-radius: 6px;
+  }
+
+  @media (max-width: 700px) {
+    .site-waypoints { display: none; }
+  }
+
+  /* ── Worldflight copy layer overrides ── */
+  .wf-copy {
+    max-width: 42rem;
+    padding: 0 var(--sc-gutter, 1.5rem);
+  }
+  .wf-copy--lead { align-self: flex-start; }
+  .wf-copy--trail { align-self: flex-end; text-align: right; }
+  .wf-copy--center {
+    align-self: center;
+    text-align: center;
+    max-width: 36rem;
+  }
+
+  .wf-hero-headline {
+    font-family: var(--sc-font-display);
+    font-weight: 600;
+    font-size: clamp(2.4rem, 5vw, 4.2rem);
+    line-height: 1.02;
+    letter-spacing: var(--sc-track-tight, -0.02em);
+    color: var(--sc-ink);
+    text-wrap: balance;
+    margin: 0 0 1rem;
+  }
+  .wf-subline {
+    font-family: var(--sc-font-text);
+    font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+    line-height: 1.55;
+    color: var(--sc-ink-soft);
+    max-width: 28rem;
+    margin: 0;
+  }
+
+  .wf-section-head {
+    font-family: var(--sc-font-display);
+    font-weight: 500;
+    font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+    line-height: 1.08;
+    letter-spacing: var(--sc-track-tight, -0.015em);
+    color: var(--sc-ink);
+    text-wrap: balance;
+    margin: 0 0 0.8rem;
+  }
+  .wf-body {
+    font-family: var(--sc-font-text);
+    font-size: clamp(0.88rem, 1.2vw, 1.05rem);
+    line-height: 1.6;
+    color: var(--sc-ink-soft);
+    max-width: var(--sc-measure, 62ch);
+    text-wrap: pretty;
+    margin: 0;
+  }
+
+  /* ── Haptic product cards (signature move) ── */
+  .haptic-card {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.2rem;
+    background: rgba(18, 20, 26, 0.65);
+    border: 1px solid rgba(59, 158, 255, 0.12);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: transform 280ms var(--sc-ease-out, ease-out);
+    will-change: transform;
+    transform-style: preserve-3d;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  .haptic-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+      circle 180px at var(--hx, 50%) var(--hy, 50%),
+      rgba(59, 158, 255, 0.14),
+      transparent 70%
+    );
+    opacity: 0;
+    transition: opacity 220ms ease-out;
+    pointer-events: none;
+  }
+  .haptic-card.haptic-active::after { opacity: 1; }
+
+  .haptic-card__label {
+    font-family: var(--sc-font-text);
+    font-size: 0.72rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--sc-accent);
+  }
+  .haptic-card__title {
+    font-family: var(--sc-font-display);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--sc-ink);
+    margin: 0;
+  }
+
+  /* ── Close CTA ── */
+  .close-cta {
+    display: inline-block;
+    font-family: var(--sc-font-text);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--sc-accent-ink);
+    background: var(--sc-accent);
+    padding: 0.9rem 2.4rem;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 1.6rem;
+    transition: opacity 160ms var(--sc-ease-out, ease-out), transform 100ms var(--sc-ease-out, ease-out);
+  }
+  .close-cta:hover { opacity: 0.88; }
+  .close-cta:active { transform: translateY(1px); }
+  .close-cta:focus-visible {
+    outline: 2px solid var(--sc-accent);
+    outline-offset: 4px;
+    border-radius: 8px;
+  }
+
+  /* ── Footer ── */
+  .wf-foot {
+    position: absolute;
+    bottom: 1.4rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: var(--sc-font-text);
+    font-size: 0.72rem;
+    color: var(--sc-ink-soft);
+    opacity: 0.5;
+  }
+
+  /* ── Trust grid ── */
+  .trust-row {
+    display: flex;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  .trust-item {
+    font-family: var(--sc-font-text);
+    font-size: 0.85rem;
+    color: var(--sc-ink-soft);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .trust-item::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--sc-accent);
+    flex-shrink: 0;
+  }
+
+  /* ── Contrast fix: localized scrims for bright-background copy ── */
+  .wf-copy--contrast {
+    position: relative;
+  }
+  .wf-copy--contrast::before {
+    content: '';
+    position: absolute;
+    inset: -1.5rem -2rem;
+    background: linear-gradient(
+      135deg,
+      rgba(8, 9, 13, 0.82) 0%,
+      rgba(8, 9, 13, 0.6) 60%,
+      transparent 100%
+    );
+    border-radius: 12px;
+    z-index: -1;
+    pointer-events: none;
+  }
+  .wf-copy--center.wf-copy--contrast::before {
+    background: radial-gradient(
+      ellipse 120% 100% at 50% 50%,
+      rgba(8, 9, 13, 0.78) 0%,
+      rgba(8, 9, 13, 0.5) 70%,
+      transparent 100%
+    );
+    inset: -2rem -3rem;
+  }
+
+  /* ── Reduced motion ── */
+  @media (prefers-reduced-motion: reduce) {
+    .haptic-card { transition: none; }
+    .haptic-card::after { display: none; }
+  }
+
+  /* ── Mobile adjustments ── */
+  @media (max-width: 700px) {
+    .wf-hero-headline { font-size: clamp(2rem, 8vw, 2.8rem); }
+    .wf-section-head { font-size: clamp(1.4rem, 6vw, 2rem); }
+    .wf-copy { max-width: 100%; }
+    .trust-row { flex-direction: column; gap: 0.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<span data-sc-progress></span>
+<div class="sc-grain" aria-hidden="true"></div>
+
+<!-- ── NAV: Waypoint list ── -->
+<header class="site-bar">
+  <a href="#top" class="site-mark"><span>M</span>obinet</a>
+  <nav>
+    <ul class="site-waypoints">
+      <li><a href="#top">Showroom</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#flagship">Flagship</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+  <a href="#shop" class="site-cta">Shop Now</a>
+</header>
+
+<!-- ── WORLDFLIGHT ── -->
+<main id="top">
+<div data-sc-mode="worldflight" data-sc-seam="0.16" data-sc-lerp="0.12">
+
+  <!-- STAGE: all 6 legs mounted simultaneously -->
+  <div data-sc-world>
+
+    <!-- Leg 1: Arrival — Awe -->
+    <div data-sc-segment data-sc-w="1.0" data-sc-linger="0.3" data-sc-waypoint="Entrance">
+      <img class="sc-world__poster" src="assets/p1.webp" alt="Dark tech showroom entrance with polished floors and LED accent lighting" decoding="async">
+    </div>
+
+    <!-- Leg 2: Discovery — Curiosity -->
+    <div data-sc-segment data-sc-w="1.2" data-sc-linger="0.3" data-sc-waypoint="Products" id="products">
+      <img class="sc-world__poster" src="assets/p2.webp" alt="Illuminated display shelves with phones, laptops, and headphones" decoding="async">
+    </div>
+
+    <!-- Leg 3: Desire — PEAK -->
+    <div data-sc-segment data-sc-w="1.6" data-sc-linger="0.4" data-sc-waypoint="Flagship" id="flagship">
+      <img class="sc-world__poster" src="assets/p3.webp" alt="Flagship phone with lifted back panel revealing circuit board internals" decoding="async">
+    </div>
+
+    <!-- Leg 4: Trust — Intimacy -->
+    <div data-sc-segment data-sc-w="0.8" data-sc-linger="0.25" data-sc-waypoint="Story" id="about">
+      <img class="sc-world__poster" src="assets/p4.webp" alt="Quiet showroom alcove with brand signage on polished wall" decoding="async">
+    </div>
+
+    <!-- Leg 5: Proof — Confidence -->
+    <div data-sc-segment data-sc-w="0.6" data-sc-linger="0.2" data-sc-waypoint="Trust">
+      <img class="sc-world__poster" src="assets/p5.webp" alt="Service guarantee signage with shipping, warranty, and support icons" decoding="async">
+    </div>
+
+    <!-- Leg 6: Commitment — Resolve -->
+    <div data-sc-segment data-sc-w="0.8" data-sc-linger="0.3" data-sc-waypoint="Counter" id="shop">
+      <img class="sc-world__poster" src="assets/p6.webp" alt="Single illuminated service counter at the end of the showroom" decoding="async">
+    </div>
+
+  </div>
+
+  <!-- COPY LAYER: fixed overlay with windowed blocks -->
+  <div data-sc-world-copy>
+
+    <!-- Scrim band for text legibility -->
+    <div class="sc-scrim sc-scrim--band" aria-hidden="true"></div>
+
+    <!-- Window 1: Hero — present on load, fades by leg 1 end -->
+    <div class="sc-copy sc-copy--lead wf-copy wf-copy--lead" data-sc-copy data-sc-window="hero">
+      <h1 class="wf-hero-headline">Technology, refined.</h1>
+      <p class="wf-subline">Premium devices, expert service, one destination. Walk the showroom.</p>
+    </div>
+
+    <!-- Window 2: Discovery — mid leg 2 -->
+    <div class="sc-copy sc-copy--trail wf-copy wf-copy--trail wf-copy--contrast" data-sc-copy data-sc-window="0.18 0.38">
+      <h2 class="wf-section-head">Every category. One roof.</h2>
+      <p class="wf-body">Phones. Laptops. Audio. Wearables. Each in its own zone, lit to be held.</p>
+      <div class="trust-row" data-haptic>
+        <div class="haptic-card">
+          <span class="haptic-card__label">Phones</span>
+          <p class="haptic-card__title">Flagship to mid-range</p>
+        </div>
+        <div class="haptic-card">
+          <span class="haptic-card__label">Laptops</span>
+          <p class="haptic-card__title">Work and creative</p>
+        </div>
+        <div class="haptic-card">
+          <span class="haptic-card__label">Audio</span>
+          <p class="haptic-card__title">Studio to portable</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Window 3: Peak — flagship reveal, longest hold -->
+    <div class="sc-copy sc-copy--lead wf-copy wf-copy--lead" data-sc-copy data-sc-window="0.42 0.62">
+      <h2 class="wf-section-head">See what powers it.</h2>
+      <p class="wf-body">Every circuit. Every layer. The engineering you carry in your pocket, finally visible.</p>
+    </div>
+
+    <!-- Window 4: Brand story — intimacy -->
+    <div class="sc-copy sc-copy--lead wf-copy wf-copy--lead" data-sc-copy data-sc-window="0.66 0.78">
+      <h2 class="wf-section-head">Built on trust.</h2>
+      <p class="wf-body">Mobinet started as a single counter in 2018. Today, we are the destination for people who care about what they carry. No compromises, no filler inventory. Every device on our floor earned its place.</p>
+    </div>
+
+    <!-- Window 5: Trust signals — confidence -->
+    <div class="sc-copy sc-copy--trail wf-copy wf-copy--trail" data-sc-copy data-sc-window="0.80 0.90">
+      <h2 class="wf-section-head">The promise.</h2>
+      <div class="trust-row">
+        <span class="trust-item">Free shipping on all orders</span>
+        <span class="trust-item">2-year warranty, no questions</span>
+        <span class="trust-item">Expert support, always human</span>
+        <span class="trust-item">14-day returns</span>
+      </div>
+    </div>
+
+    <!-- Window 6: Finale — CTA, holds to end -->
+    <div class="sc-copy sc-copy--center wf-copy wf-copy--center wf-copy--contrast" data-sc-copy data-sc-window="finale">
+      <h2 class="wf-section-head">Your counter is ready.</h2>
+      <p class="wf-body">One click. The showroom comes to you.</p>
+      <a href="#" class="close-cta">Shop Now</a>
+      <footer class="wf-foot">Mobinet Retail. Technology, refined.</footer>
+    </div>
+
+  </div>
+
+  <!-- SPACER: the only document-flow element -->
+  <div data-sc-spacer aria-hidden="true"></div>
+
+</div>
+</main>
+
+<script src="scrollcraft.js"></script>
+<script>
+// Mount the engine
+ScrollCraft.mount(document.body);
+
+// ── Worldflight mount guard ──
+// If innerHeight reads 0 at mount, spacer sizes to 0px and freezes.
+(function relayout() {
+  window.dispatchEvent(new Event('resize'));
+})();
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(function () {
+    window.dispatchEvent(new Event('resize'));
+  });
+}
+window.addEventListener('load', function () {
+  window.dispatchEvent(new Event('resize'));
+});
+
+// ── Signature Move: Haptic Cursor Field ──
+// Products react to pointer with physics-driven micro-tilt + luminance bloom.
+// Gated to hover+fine pointer. Disabled under prefers-reduced-motion.
+(function () {
+  var mq = window.matchMedia('(hover: hover) and (pointer: fine)');
+  var rm = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!mq.matches || rm.matches) return;
+
+  var cards = document.querySelectorAll('.haptic-card');
+  if (!cards.length) return;
+
+  function handleMove(e) {
+    cards.forEach(function (card) {
+      var rect = card.getBoundingClientRect();
+      // Check if pointer is within proximity (200px radius)
+      var cx = rect.left + rect.width / 2;
+      var cy = rect.top + rect.height / 2;
+      var dx = e.clientX - cx;
+      var dy = e.clientY - cy;
+      var dist = Math.sqrt(dx * dx + dy * dy);
+
+      if (dist < 280) {
+        // Pointer is near — activate haptic response
+        var rx = (dy / rect.height) * -8; // tilt X (max 8deg)
+        var ry = (dx / rect.width) * 8;   // tilt Y (max 8deg)
+        rx = Math.max(-8, Math.min(8, rx));
+        ry = Math.max(-8, Math.min(8, ry));
+
+        // Luminance bloom position relative to card
+        var hx = ((e.clientX - rect.left) / rect.width) * 100;
+        var hy = ((e.clientY - rect.top) / rect.height) * 100;
+
+        card.style.transform = 'perspective(800px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg)';
+        card.style.setProperty('--hx', hx + '%');
+        card.style.setProperty('--hy', hy + '%');
+        card.classList.add('haptic-active');
+      } else {
+        // Out of range — reset
+        card.style.transform = '';
+        card.classList.remove('haptic-active');
+      }
+    });
+  }
+
+  function handleLeave() {
+    cards.forEach(function (card) {
+      card.style.transform = '';
+      card.classList.remove('haptic-active');
+    });
+  }
+
+  document.addEventListener('pointermove', handleMove, { passive: true });
+  document.addEventListener('pointerleave', handleLeave);
+})();
+</script>
+</body>
+</html>
