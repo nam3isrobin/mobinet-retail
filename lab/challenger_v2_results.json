@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-26T20:33:07.984Z",
+  "timestamp": "2026-08-26T20:49:01.387Z",
   "clsAudit": {
     "allPassed": true,
     "results": [
@@ -143,35 +143,35 @@
           "durations": [
             {
               "target": 0,
-              "durationMs": 0.30000001192092896
+              "durationMs": 0.29999998211860657
             },
             {
               "target": 0.5,
-              "durationMs": 81.30000001192093
+              "durationMs": 81.39999997615814
             },
             {
               "target": 1.25,
-              "durationMs": 62.400000005960464
+              "durationMs": 60.69999998807907
             },
             {
               "target": 2.5,
-              "durationMs": 57.599999994039536
+              "durationMs": 57.60000002384186
             },
             {
               "target": 3.75,
-              "durationMs": 34.099999994039536
+              "durationMs": 34.5
             },
             {
               "target": 4.9,
-              "durationMs": 45
+              "durationMs": 44.599999994039536
             },
             {
               "target": 1,
-              "durationMs": 66.19999998807907
+              "durationMs": 64.69999998807907
             },
             {
               "target": 3,
-              "durationMs": 42.099999994039536
+              "durationMs": 41.400000005960464
             },
             {
               "target": 0.1,
@@ -179,18 +179,18 @@
             },
             {
               "target": 4.8,
-              "durationMs": 33.099999994039536
+              "durationMs": 31.600000023841858
             },
             {
               "target": 0,
-              "durationMs": 34.80000001192093
+              "durationMs": 34.89999997615814
             }
           ],
           "minMs": "0.30",
-          "avgMs": "47.44",
-          "p50Ms": "45.00",
-          "p95Ms": "81.30",
-          "maxMs": "81.30"
+          "avgMs": "46.96",
+          "p50Ms": "44.60",
+          "p95Ms": "81.40",
+          "maxMs": "81.40"
         },
         "passed": true
       },
@@ -209,15 +209,15 @@
           "durations": [
             {
               "target": 0,
-              "durationMs": 0.4000000059604645
+              "durationMs": 0.29999998211860657
             },
             {
               "target": 0.5,
-              "durationMs": 79.5
+              "durationMs": 82.59999999403954
             },
             {
               "target": 1.25,
-              "durationMs": 59.5
+              "durationMs": 58.80000001192093
             },
             {
               "target": 2.5,
@@ -225,11 +225,11 @@
             },
             {
               "target": 3.75,
-              "durationMs": 35.80000001192093
+              "durationMs": 36.5
             },
             {
               "target": 4.9,
-              "durationMs": 46.599999994039536
+              "durationMs": 47.20000001788139
             },
             {
               "target": 1,
@@ -237,26 +237,26 @@
             },
             {
               "target": 3,
-              "durationMs": 40.19999998807907
+              "durationMs": 41.099999994039536
             },
             {
               "target": 0.1,
-              "durationMs": 68.59999999403954
+              "durationMs": 68.2999999821186
             },
             {
               "target": 4.8,
-              "durationMs": 33
+              "durationMs": 33.900000005960464
             },
             {
               "target": 0,
-              "durationMs": 33.79999998211861
+              "durationMs": 32.69999998807907
             }
           ],
-          "minMs": "0.40",
-          "avgMs": "47.43",
-          "p50Ms": "46.60",
-          "p95Ms": "79.50",
-          "maxMs": "79.50"
+          "minMs": "0.30",
+          "avgMs": "47.79",
+          "p50Ms": "47.20",
+          "p95Ms": "82.60",
+          "maxMs": "82.60"
         },
         "passed": true
       },
@@ -275,54 +275,54 @@
           "durations": [
             {
               "target": 0,
-              "durationMs": 0.19999998807907104
+              "durationMs": 0.4000000059604645
             },
             {
               "target": 0.5,
-              "durationMs": 78.30000001192093
+              "durationMs": 75.2999999821186
             },
             {
               "target": 1.25,
-              "durationMs": 62.099999994039536
+              "durationMs": 57.599999994039536
             },
             {
               "target": 2.5,
-              "durationMs": 55.20000001788139
+              "durationMs": 56.69999998807907
             },
             {
               "target": 3.75,
-              "durationMs": 33.5
+              "durationMs": 34.29999998211861
             },
             {
               "target": 4.9,
-              "durationMs": 42.70000001788139
+              "durationMs": 43.400000005960464
             },
             {
               "target": 1,
-              "durationMs": 63.400000005960464
+              "durationMs": 62.10000002384186
             },
             {
               "target": 3,
-              "durationMs": 39.80000001192093
+              "durationMs": 40.900000005960464
             },
             {
               "target": 0.1,
-              "durationMs": 60.20000001788139
+              "durationMs": 60.900000005960464
             },
             {
               "target": 4.8,
-              "durationMs": 31.799999982118607
+              "durationMs": 32.10000002384186
             },
             {
               "target": 0,
-              "durationMs": 31.5
+              "durationMs": 33.099999994039536
             }
           ],
-          "minMs": "0.20",
-          "avgMs": "45.34",
-          "p50Ms": "42.70",
-          "p95Ms": "78.30",
-          "maxMs": "78.30"
+          "minMs": "0.40",
+          "avgMs": "45.16",
+          "p50Ms": "43.40",
+          "p95Ms": "75.30",
+          "maxMs": "75.30"
         },
         "passed": true
       },
@@ -341,54 +341,54 @@
           "durations": [
             {
               "target": 0,
-              "durationMs": 0.30000001192092896
+              "durationMs": 0.4000000059604645
             },
             {
               "target": 0.5,
-              "durationMs": 86.5
+              "durationMs": 86.69999998807907
             },
             {
               "target": 1.25,
-              "durationMs": 60.60000002384186
+              "durationMs": 62.5
             },
             {
               "target": 2.5,
-              "durationMs": 61.099999994039536
+              "durationMs": 60.20000001788139
             },
             {
               "target": 3.75,
-              "durationMs": 37.099999994039536
+              "durationMs": 36.39999997615814
             },
             {
               "target": 4.9,
-              "durationMs": 47.29999998211861
+              "durationMs": 47
             },
             {
               "target": 1,
-              "durationMs": 66.5
+              "durationMs": 66.09999999403954
             },
             {
               "target": 3,
-              "durationMs": 43.5
+              "durationMs": 42.900000005960464
             },
             {
               "target": 0.1,
-              "durationMs": 67.30000001192093
+              "durationMs": 68.59999999403954
             },
             {
               "target": 4.8,
-              "durationMs": 34.099999994039536
+              "durationMs": 34.400000005960464
             },
             {
               "target": 0,
-              "durationMs": 35.599999994039536
+              "durationMs": 35.5
             }
           ],
-          "minMs": "0.30",
-          "avgMs": "49.08",
-          "p50Ms": "47.30",
-          "p95Ms": "86.50",
-          "maxMs": "86.50"
+          "minMs": "0.40",
+          "avgMs": "49.15",
+          "p50Ms": "47.00",
+          "p95Ms": "86.70",
+          "maxMs": "86.70"
         },
         "passed": true
       },
@@ -407,54 +407,54 @@
           "durations": [
             {
               "target": 0,
-              "durationMs": 0.5
+              "durationMs": 0.3999999761581421
             },
             {
               "target": 0.5,
-              "durationMs": 80.5
+              "durationMs": 80.2999999821186
             },
             {
               "target": 1.25,
-              "durationMs": 62.20000001788139
+              "durationMs": 61.29999998211861
             },
             {
               "target": 2.5,
-              "durationMs": 59.400000005960464
+              "durationMs": 60.19999998807907
             },
             {
               "target": 3.75,
-              "durationMs": 36.30000001192093
+              "durationMs": 36.70000001788139
             },
             {
               "target": 4.9,
-              "durationMs": 46.900000005960464
+              "durationMs": 46.80000001192093
             },
             {
               "target": 1,
-              "durationMs": 65.89999997615814
+              "durationMs": 66.2000000178814
             },
             {
               "target": 3,
-              "durationMs": 41.900000005960464
+              "durationMs": 43.099999994039536
             },
             {
               "target": 0.1,
-              "durationMs": 67.19999998807907
+              "durationMs": 64.59999999403954
             },
             {
               "target": 4.8,
-              "durationMs": 34.29999998211861
+              "durationMs": 33.400000005960464
             },
             {
               "target": 0,
-              "durationMs": 32.599999994039536
+              "durationMs": 33.599999994039536
             }
           ],
-          "minMs": "0.50",
-          "avgMs": "47.97",
-          "p50Ms": "46.90",
-          "p95Ms": "80.50",
-          "maxMs": "80.50"
+          "minMs": "0.40",
+          "avgMs": "47.87",
+          "p50Ms": "46.80",
+          "p95Ms": "80.30",
+          "maxMs": "80.30"
         },
         "passed": true
       },
@@ -481,44 +481,44 @@
             },
             {
               "target": 1.25,
-              "durationMs": 53.400000005960464
+              "durationMs": 53.20000001788139
             },
             {
               "target": 2.5,
-              "durationMs": 51.69999998807907
+              "durationMs": 52.900000005960464
             },
             {
               "target": 3.75,
-              "durationMs": 33
+              "durationMs": 32.599999994039536
             },
             {
               "target": 4.9,
-              "durationMs": 42.900000005960464
+              "durationMs": 41
             },
             {
               "target": 1,
-              "durationMs": 60.599999994039536
+              "durationMs": 57.30000001192093
             },
             {
               "target": 3,
-              "durationMs": 38.30000001192093
+              "durationMs": 36.60000002384186
             },
             {
               "target": 0.1,
-              "durationMs": 58.20000001788139
+              "durationMs": 58.19999998807907
             },
             {
               "target": 4.8,
-              "durationMs": 33
+              "durationMs": 31.700000017881393
             },
             {
               "target": 0,
-              "durationMs": 31.899999976158142
+              "durationMs": 31.80000001192093
             }
           ],
           "minMs": "0.30",
-          "avgMs": "43.19",
-          "p50Ms": "42.90",
+          "avgMs": "42.49",
+          "p50Ms": "41.00",
           "p95Ms": "71.80",
           "maxMs": "71.80"
         },
@@ -539,54 +539,54 @@
           "durations": [
             {
               "target": 0,
-              "durationMs": 0.3999999761581421
+              "durationMs": 0.5
             },
             {
               "target": 0.5,
-              "durationMs": 23.69999998807907
+              "durationMs": 24.099999994039536
             },
             {
               "target": 1.25,
-              "durationMs": 19.100000023841858
+              "durationMs": 18.80000001192093
             },
             {
               "target": 2.5,
-              "durationMs": 23.799999982118607
+              "durationMs": 24.099999994039536
             },
             {
               "target": 3.75,
-              "durationMs": 15.900000005960464
+              "durationMs": 15.299999982118607
             },
             {
               "target": 4.9,
-              "durationMs": 14.900000005960464
+              "durationMs": 15.199999988079071
             },
             {
               "target": 1,
-              "durationMs": 17.5
+              "durationMs": 18.5
             },
             {
               "target": 3,
-              "durationMs": 18.899999976158142
+              "durationMs": 18.600000023841858
             },
             {
               "target": 0.1,
-              "durationMs": 23.19999998807907
+              "durationMs": 23.099999994039536
             },
             {
               "target": 4.8,
-              "durationMs": 15.100000023841858
+              "durationMs": 15.700000017881393
             },
             {
               "target": 0,
-              "durationMs": 14.800000011920929
+              "durationMs": 16.19999998807907
             }
           ],
-          "minMs": "0.40",
-          "avgMs": "17.03",
-          "p50Ms": "17.50",
-          "p95Ms": "23.80",
-          "maxMs": "23.80"
+          "minMs": "0.50",
+          "avgMs": "17.28",
+          "p50Ms": "18.50",
+          "p95Ms": "24.10",
+          "maxMs": "24.10"
         },
         "passed": true
       },
@@ -605,54 +605,54 @@
           "durations": [
             {
               "target": 0,
-              "durationMs": 0.29999998211860657
+              "durationMs": 0.20000001788139343
             },
             {
               "target": 0.5,
-              "durationMs": 24.100000023841858
+              "durationMs": 23.900000005960464
             },
             {
               "target": 1.25,
-              "durationMs": 17.900000005960464
+              "durationMs": 17.5
             },
             {
               "target": 2.5,
-              "durationMs": 22.899999976158142
+              "durationMs": 22.599999994039536
             },
             {
               "target": 3.75,
-              "durationMs": 16.599999994039536
+              "durationMs": 16.299999982118607
             },
             {
               "target": 4.9,
-              "durationMs": 14.699999988079071
+              "durationMs": 15.5
             },
             {
               "target": 1,
-              "durationMs": 18.5
+              "durationMs": 18.299999982118607
             },
             {
               "target": 3,
-              "durationMs": 17
+              "durationMs": 17.599999994039536
             },
             {
               "target": 0.1,
-              "durationMs": 22.799999982118607
+              "durationMs": 23.19999998807907
             },
             {
               "target": 4.8,
-              "durationMs": 16.099999994039536
+              "durationMs": 16
             },
             {
               "target": 0,
-              "durationMs": 14.5
+              "durationMs": 15.900000005960464
             }
           ],
-          "minMs": "0.30",
-          "avgMs": "16.85",
-          "p50Ms": "17.00",
-          "p95Ms": "24.10",
-          "maxMs": "24.10"
+          "minMs": "0.20",
+          "avgMs": "17.00",
+          "p50Ms": "17.50",
+          "p95Ms": "23.90",
+          "maxMs": "23.90"
         },
         "passed": true
       },
@@ -671,54 +671,54 @@
           "durations": [
             {
               "target": 0,
-              "durationMs": 0.4000000059604645
+              "durationMs": 0.20000001788139343
             },
             {
               "target": 0.5,
-              "durationMs": 21.900000005960464
+              "durationMs": 22.69999998807907
             },
             {
               "target": 1.25,
-              "durationMs": 16.80000001192093
+              "durationMs": 18.099999994039536
             },
             {
               "target": 2.5,
-              "durationMs": 21.599999994039536
+              "durationMs": 23.19999998807907
             },
             {
               "target": 3.75,
-              "durationMs": 15.5
+              "durationMs": 15.099999994039536
             },
             {
               "target": 4.9,
-              "durationMs": 13.899999976158142
+              "durationMs": 14.5
             },
             {
               "target": 1,
-              "durationMs": 17.5
+              "durationMs": 16.19999998807907
             },
             {
               "target": 3,
-              "durationMs": 16.900000005960464
+              "durationMs": 17.700000017881393
             },
             {
               "target": 0.1,
-              "durationMs": 21.399999976158142
+              "durationMs": 21.69999998807907
             },
             {
               "target": 4.8,
-              "durationMs": 14.300000011920929
+              "durationMs": 14.800000011920929
             },
             {
               "target": 0,
-              "durationMs": 13.199999988079071
+              "durationMs": 13.299999982118607
             }
           ],
-          "minMs": "0.40",
-          "avgMs": "15.76",
-          "p50Ms": "16.80",
-          "p95Ms": "21.90",
-          "maxMs": "21.90"
+          "minMs": "0.20",
+          "avgMs": "16.14",
+          "p50Ms": "16.20",
+          "p95Ms": "23.20",
+          "maxMs": "23.20"
         },
         "passed": true
       },
@@ -737,54 +737,54 @@
           "durations": [
             {
               "target": 0,
-              "durationMs": 0.30000001192092896
+              "durationMs": 0.20000001788139343
             },
             {
               "target": 0.5,
-              "durationMs": 23.099999994039536
+              "durationMs": 23.69999998807907
             },
             {
               "target": 1.25,
-              "durationMs": 18.400000005960464
+              "durationMs": 17.799999982118607
             },
             {
               "target": 2.5,
-              "durationMs": 23.19999998807907
+              "durationMs": 22.599999994039536
             },
             {
               "target": 3.75,
-              "durationMs": 16.30000001192093
+              "durationMs": 16.19999998807907
             },
             {
               "target": 4.9,
-              "durationMs": 14.400000005960464
+              "durationMs": 14.599999994039536
             },
             {
               "target": 1,
-              "durationMs": 17.599999994039536
+              "durationMs": 16.69999998807907
             },
             {
               "target": 3,
-              "durationMs": 17.19999998807907
+              "durationMs": 18.099999994039536
             },
             {
               "target": 0.1,
-              "durationMs": 21.5
+              "durationMs": 21.700000017881393
             },
             {
               "target": 4.8,
-              "durationMs": 15
+              "durationMs": 15.5
             },
             {
               "target": 0,
-              "durationMs": 13.800000011920929
+              "durationMs": 13.400000005960464
             }
           ],
-          "minMs": "0.30",
-          "avgMs": "16.44",
-          "p50Ms": "17.20",
-          "p95Ms": "23.20",
-          "maxMs": "23.20"
+          "minMs": "0.20",
+          "avgMs": "16.41",
+          "p50Ms": "16.70",
+          "p95Ms": "23.70",
+          "maxMs": "23.70"
         },
         "passed": true
       },
@@ -803,15 +803,15 @@
           "durations": [
             {
               "target": 0,
-              "durationMs": 0.30000001192092896
+              "durationMs": 0.4000000059604645
             },
             {
               "target": 0.5,
-              "durationMs": 23.700000017881393
+              "durationMs": 25.30000001192093
             },
             {
               "target": 1.25,
-              "durationMs": 18.200000017881393
+              "durationMs": 18.5
             },
             {
               "target": 2.5,
@@ -819,7 +819,7 @@
             },
             {
               "target": 3.75,
-              "durationMs": 16.099999994039536
+              "durationMs": 15.900000005960464
             },
             {
               "target": 4.9,
@@ -827,30 +827,30 @@
             },
             {
               "target": 1,
-              "durationMs": 17.299999982118607
+              "durationMs": 18.30000001192093
             },
             {
               "target": 3,
-              "durationMs": 18.099999994039536
+              "durationMs": 18.30000001192093
             },
             {
               "target": 0.1,
-              "durationMs": 21.80000001192093
+              "durationMs": 22.600000023841858
             },
             {
               "target": 4.8,
-              "durationMs": 16.599999994039536
+              "durationMs": 17.099999994039536
             },
             {
               "target": 0,
-              "durationMs": 14.600000023841858
+              "durationMs": 16.299999982118607
             }
           ],
-          "minMs": "0.30",
-          "avgMs": "16.94",
-          "p50Ms": "17.30",
-          "p95Ms": "24.10",
-          "maxMs": "24.10"
+          "minMs": "0.40",
+          "avgMs": "17.48",
+          "p50Ms": "18.30",
+          "p95Ms": "25.30",
+          "maxMs": "25.30"
         },
         "passed": true
       },
@@ -869,54 +869,54 @@
           "durations": [
             {
               "target": 0,
-              "durationMs": 0.30000001192092896
+              "durationMs": 0.4000000059604645
             },
             {
               "target": 0.5,
-              "durationMs": 20.80000001192093
+              "durationMs": 22.19999998807907
             },
             {
               "target": 1.25,
-              "durationMs": 15.400000005960464
+              "durationMs": 15.700000017881393
             },
             {
               "target": 2.5,
-              "durationMs": 19.80000001192093
+              "durationMs": 19.5
             },
             {
               "target": 3.75,
-              "durationMs": 14
+              "durationMs": 12.299999982118607
             },
             {
               "target": 4.9,
-              "durationMs": 12.400000005960464
+              "durationMs": 12.199999988079071
             },
             {
               "target": 1,
-              "durationMs": 16.400000005960464
+              "durationMs": 16.099999994039536
             },
             {
               "target": 3,
-              "durationMs": 15.300000011920929
+              "durationMs": 15.799999982118607
             },
             {
               "target": 0.1,
-              "durationMs": 19.599999994039536
+              "durationMs": 19.299999982118607
             },
             {
               "target": 4.8,
-              "durationMs": 13.799999982118607
+              "durationMs": 13
             },
             {
               "target": 0,
-              "durationMs": 11.599999994039536
+              "durationMs": 12.100000023841858
             }
           ],
-          "minMs": "0.30",
-          "avgMs": "14.49",
-          "p50Ms": "15.30",
-          "p95Ms": "20.80",
-          "maxMs": "20.80"
+          "minMs": "0.40",
+          "avgMs": "14.42",
+          "p50Ms": "15.70",
+          "p95Ms": "22.20",
+          "maxMs": "22.20"
         },
         "passed": true
       }
@@ -924,15 +924,15 @@
   },
   "liveInteractiveScrubbing": {
     "metrics": {
-      "totalRequested": 1114,
-      "totalCompleted": 1112,
+      "totalRequested": 1109,
+      "totalCompleted": 1108,
       "stalls": 4,
-      "minMs": "29.70",
-      "avgMs": "101.55",
-      "p50Ms": "93.70",
-      "p95Ms": "179.90",
-      "p99Ms": "199.50",
-      "maxMs": "227.40"
+      "minMs": "30.50",
+      "avgMs": "102.10",
+      "p50Ms": "96.40",
+      "p95Ms": "181.40",
+      "p99Ms": "202.60",
+      "maxMs": "234.90"
     },
     "passed": true
   },

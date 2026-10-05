@@ -49,11 +49,11 @@
 
 | # | Name | Scope | Dependencies | Status |
 |---|---|---|---|---|
-| **E2E** | E2E Testing Track | Requirement-driven opaque-box test suite (Tiers 1–4), `TEST_READY.md` | Survey | PLANNED |
-| **M1** | VideoFX Automation & FFmpeg Encoding Pipeline | Features 1–8: `lab/videofx_pipeline.js`, FFmpeg encoding script, 6 video legs + posters | Survey | PLANNED |
-| **M2** | Mobile Viewport, Touch Physics & Scrim Overhaul | Features 9–15: `scrollcraft.css`, `index.html` responsive typography, scrims, touch targets | Survey | PLANNED |
-| **M3** | Worldflight Video Scrubbing & Runtime Integration | Features 16–19: `index.html`, `scrollcraft.js` video mounting, crossfading, fallbacks | M1, M2 | PLANNED |
-| **M4** | Final E2E Pass, Adversarial Hardening & Git Sync | Features 20–22: 100% E2E test pass across viewports, Tier 5 hardening, git sync | E2E, M3 | PLANNED |
+| **E2E** | E2E Testing Track | Requirement-driven opaque-box test suite (Tiers 1–4), `TEST_READY.md` | Survey | **DONE** |
+| **M1** | VideoFX Automation & FFmpeg Encoding Pipeline | Features 1–8: `lab/videofx_pipeline.js`, FFmpeg encoding script, 6 video legs + posters | Survey | **DONE** |
+| **M2** | Mobile Viewport, Touch Physics & Scrim Overhaul | Features 9–15: `scrollcraft.css`, `index.html` responsive typography, scrims, touch targets | Survey | **DONE** |
+| **M3** | Worldflight Video Scrubbing & Runtime Integration | Features 16–19: `index.html`, `scrollcraft.js` video mounting, crossfading, fallbacks | M1, M2 | **DONE** |
+| **M4** | Final E2E Pass, Adversarial Hardening & Git Sync | Features 20–22: 100% E2E test pass across viewports, Tier 5 hardening, git sync | E2E, M3 | **DONE** |
 
 ## Interface Contracts
 
@@ -64,7 +64,7 @@
   - WebP Posters: `assets/p{1..6}.webp` (Quality 82, first frame of encoded MP4).
 - **DOM Specification**:
   ```html
-  <div class="sc-segment" data-sc-segment data-sc-weight="[w]" data-sc-linger="[L]">
+  <div class="sc-segment sc-world__seg" data-sc-segment data-sc-weight="[w]" data-sc-linger="[L]">
     <div class="sc-segment__media">
       <video
         data-sc-src="assets/leg[N].mp4"
